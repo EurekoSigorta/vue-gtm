@@ -36,6 +36,10 @@ export default class AnalyticsPlugin {
         'content-name': path,
         'content-view-name': screenName
       })
+      dataLayer.push({
+       'event': 'Pageview',
+       'url': path
+      })
     }
   }
 
